@@ -1,0 +1,411 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.mb-10{
+    margin-bottom: 100px;
+}
+
+
+.py-10{
+    padding: 100px 0;
+}
+
+.py-7{
+    padding: 70px 0;
+}
+
+
+/* Start of Navbar styles  */
+
+.navbar .nav-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.navbar .nav-link.active{
+    color: white;
+}
+
+/* Start of Header Styles */
+.home{
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../Images/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.socials li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.socials li a {
+    color: white;
+}
+
+/* End of Header Styles  */
+
+/* start of about me styles  */
+
+.about-hero-img img {
+    position: relative;
+}
+.about-hero-img::after {
+    content: "";
+    height: 80%;
+    width: 30%;
+    background-image: url(../Images/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 90px;
+    bottom: -650px;
+    z-index: -1;  
+}
+
+
+
+.about .contents h2 {
+    font-weight: 800;
+
+}
+
+.about .contents h4 {
+    font-size: 16px;
+    color: #acacac;
+    margin-bottom: 20px;
+}
+
+.about .dummy {
+    font-size: 15px;
+    color: #748182;
+}
+
+.progress{
+    height: 25px;
+    margin: 25px 0;
+}
+.progress-1 {
+    width: 95%;
+    border-radius: 7px ;
+}
+
+.progress-2 {
+    width: 80%;
+    border-radius: 7px ;
+}
+
+.progress-3{
+    width: 90%;
+    border-radius: 7px ;
+}
+
+
+.btn-castom {
+    padding: 10px 30px;
+    font-size: 14px;
+    border-radius: 7px;
+    background-color: white;
+
+}
+
+.about .bottons .btn-1 , .contact .send-message-btn {
+    background-color: rgb(26, 26, 26);
+    border: 1px black solid;
+    color: white;
+    transition: 0.3s;
+}
+
+.about .bottons .btn-2 {
+    border: 1px black solid;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.about .bottons .btn-1:hover ,  .contact .send-message-btn:hover{
+    background-color: white ;
+    color: rgb(26, 26, 26);
+    border: 1px black solid;
+}
+
+.about .bottons .btn-2:hover{
+    background-color:rgb(26, 26, 26);
+    color: white;
+    border: 1px black solid;
+}
+
+/* end of aboutme Styles */
+
+
+/* Start of Services styles  */
+
+.bg-gray{
+    background-color: #f7f7f7;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.service-item {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 7px;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.service-item .service-icon i {
+    font-size: 25px;
+}
+
+.service-item p {
+    font-size: 15px;
+}
+
+.service-icon:hover{
+    background-color: black;
+}
+.service-icon:hover i {
+    color: white;
+}
+
+.pb-10 {
+    padding-bottom: 100px;
+}
+/* end of Services section  */
+
+
+/* begin of Portofolio Section  */
+.portfolio .section-title {
+    padding: 40px 0;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+} 
+
+.nav-link {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+.portfolio .item .item-title {
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+    visibility: hidden;
+    transition: 0.2s ease;
+ 
+}
+
+.portfolio .item .item-icon-group{
+    position: relative;
+    bottom: -5px;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.portfolio .item:hover .item-icon-group{
+    bottom:0px;
+    visibility: visible;
+}
+.portfolio .item:hover .item-title {
+    top: 0px;
+    visibility: visible;
+}
+
+.item-content {
+    z-index: 1;
+}
+
+.portfolio .item::after {
+    margin: auto;
+    content: "";
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255 ,0.9);
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 0;
+}
+
+.portfolio .item:hover::after{
+    opacity: 1;
+}
+.portfolio .icon {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.portfolio .icon i {
+    font-size: 12px;
+    color: white;
+}
+
+.portfolio .item .item-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+/* end of Protofolio Styles */
+
+/* start of clint Styles */
+
+
+.clint .section-title{
+    padding: 30px 0;
+}
+
+.clint .clint-pic{
+    width: 100px;
+
+}
+
+.clint .caption {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8c9494;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    top: 50px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+/* end of clint Styles */
+
+/* start of counter styles */
+.counter .item i {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.counter .item span {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+
+}
+
+.counter .item p {
+    color:#748182;
+    font-weight: 700;
+}
+
+/* end of counter styles */
+
+/* Start of team styles  */
+
+.team .team-member-detail{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.team .team-member-pic img{
+    transition: 0.3s;
+  
+}
+
+.team .team-member-pic {
+    overflow: hidden;
+}
+.team .team-member-pic:hover img {
+    transform: scale(1.1); 
+
+}
+
+.team .team-member-pic .socials {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.team .item:hover .socials{
+    opacity: 1;
+}
+
+/* end of team styles  */
+
+/* start of contact styles */
+
+.contact .item .contact-icon {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: 0.5s;
+}
+
+.contact .item .contact-icon i {
+    color: black;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.contact .item h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.contact .item:hover .contact-icon{
+    background-color: #000000;
+}
+.contact .item:hover .contact-icon i {
+    color: white;
+}
+/* end of contact styles */
+
+/* start of footer styles  */
+
+.footer-bg-clr{
+    font-family: "Poppins", sans-serif;
+    background: #1c1c1c ;
+    color: #748182;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+@media  (max-width: 600px){
+    .fs-40 {
+        font-size: 30px;
+    }
+}
